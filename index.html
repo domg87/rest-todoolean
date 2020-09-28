@@ -12,10 +12,14 @@
 <body>
     <h1>Todo-List</h1>
     <ul id="list"></ul>
+    <label for="input">
+        <input id="input-element" type="text" placeholder="Inserisci elemnto">
+        <button class="btn add"><i class="click-input fas fa-arrow-alt-circle-right"></i></button>
+    </label>
     
     <!-- template handlebars -->
     <script id="element-template" type="text/x-handlebars-template">
-        <li id="{{id}}">{{text}} <span class="delete"><i class="fas fa-pen"></i></span></li>
+        <li id="{{id}}">{{text}} <span class="delete"><i class="click-input fas fa-pen"></i> <i class="delete fas fa-trash-alt"></i> </span></li>
     </script>
     <!-- template handlebars -->
 
